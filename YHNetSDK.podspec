@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.vendored_frameworks = ['Classes/*.framework']
+  s.vendored_frameworks = ["Classes/*.framework"]
   
