@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => "1.0.0" }
 
-  s.source_files  = "Classes", "Classes/*"
+  #s.source_files  = "Classes", "Classes/*"
 
   s.requires_arc = true
 
