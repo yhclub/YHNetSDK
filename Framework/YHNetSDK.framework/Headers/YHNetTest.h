@@ -10,10 +10,6 @@
 
 @interface YHNetTest : NSObject
 
-+(void)reachabilityManager;
-
--(void)observeNetWorking;
-
 +(void)testAfn;
 
 
