@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
 
   s.dependency     "AFNetworking","~>3.1.0"
 
-  s.vendored_frameworks = ["Classes/*.framework"]
+  s.vendored_frameworks = ["Framework/*.framework"]
   
   end
