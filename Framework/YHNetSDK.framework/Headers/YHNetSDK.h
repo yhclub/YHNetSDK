@@ -3,6 +3,7 @@
 //  YHNetSDK
 //
 //  Created by zxl on 2018/1/30.
+//  V1.0.1  by jagtu  upload file
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -19,7 +20,9 @@ FOUNDATION_EXPORT const unsigned char YHNetSDKVersionString[];
 #import <YHNetSDK/YHNetTest.h>
 
 #import <YHNetSDK/YHNetProtocol.h>
+#import <YHNetSDK/YHUploadFileModel.h>
 #import <YHNetSDK/YHNetUnility.h>
 #import <YHNetSDK/YHBaseDP.h>
+#import <YHNetSDK/YHBaseUploadDP.h>
 #import <YHNetSDK/YHBaseLoadMoreDP.h>
 

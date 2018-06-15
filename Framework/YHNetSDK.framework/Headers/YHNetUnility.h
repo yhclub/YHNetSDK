@@ -14,6 +14,8 @@ typedef void(^YHSuccessed)(id obj);
 
 typedef void(^YHFailed)(NSError *error);
 
+typedef void(^YHUploadProgress)(float uploadProgress);
+
 @interface YHNetUnility : NSObject
 
 
@@ -36,6 +38,18 @@ typedef void(^YHFailed)(NSError *error);
  @param failed failed
  */
 +(void)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
+
+/**
+ postRequestWithUploadFile
+ 
+ @param url url
+ @param parameters 参数
+ @param files 文件，数组里为：NSURL对象或YHUploadFileModel对象
+ @param progress 进度回调
+ @param successed 成功回调
+ @param failed 失败回调
+ */
++(void)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withFiles:(NSArray *)files uploadProgress:(YHUploadProgress)progress withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
 
 /**
  设置UA

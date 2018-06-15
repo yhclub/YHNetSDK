@@ -15,3 +15,10 @@
 -(void)netByDP:(id)dataProvider doWhenFailed:(id)obj;
 
 @end
+
+
+@protocol YHUploadNetProtocol <YHNetProtocol>
+
+-(void)netByDP:(id)dataProvider uploadProgress:(float) uploadProgress;
+
+@end
