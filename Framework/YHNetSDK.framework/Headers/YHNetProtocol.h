@@ -10,14 +10,11 @@
 
 @protocol YHNetProtocol <NSObject>
 
+@optional
+
 -(void)netByDP:(id)dataProvider doWhenSuccess:(id) obj;
 
 -(void)netByDP:(id)dataProvider doWhenFailed:(id)obj;
-
-@end
-
-
-@protocol YHUploadNetProtocol <YHNetProtocol>
 
 -(void)netByDP:(id)dataProvider uploadProgress:(float) uploadProgress;
 
