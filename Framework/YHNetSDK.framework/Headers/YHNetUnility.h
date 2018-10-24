@@ -9,12 +9,16 @@
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT NSString * const YHNetUserAgent;//USERAGENT Flag
+FOUNDATION_EXPORT NSTimeInterval YHNetTimeoutInterval;
 
 typedef void(^YHSuccessed)(id obj);
 
 typedef void(^YHFailed)(NSError *error);
 
 typedef void(^YHUploadProgress)(float uploadProgress);
+
+//手势锁定时间间隔
+#define NSTimeIntervalSinceEnterBackground  -60.0
 
 @interface YHNetUnility : NSObject
 
@@ -38,6 +42,18 @@ typedef void(^YHUploadProgress)(float uploadProgress);
  @param failed failed
  */
 +(void)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
+
+
+/**
+ postRequest(AFHTTPRequestSerializer)
+ 
+ @param url url
+ @param parameters 参数
+ @param successed successed
+ @param failed failed
+ */
++(void)postHTTPRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
+
 
 /**
  postRequestWithUploadFile

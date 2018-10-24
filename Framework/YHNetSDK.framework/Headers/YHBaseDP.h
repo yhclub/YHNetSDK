@@ -164,4 +164,5 @@
 -(void)setDPStatusWhenSuccessed;
 
 -(void)setDPStatusWhenFailed;
+
 @end
