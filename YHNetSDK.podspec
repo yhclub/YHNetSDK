@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHNetSDK"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "YHNetSDK is only a net sdk"
 
   s.description  = "YHNetSDK is only a base net sdk, we need pod thirdparty: AFNetworking"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   #s.dependency     "Reachability", "~> 3.2"
 
-  s.dependency     "AFNetworking",  "~> 3.2.1"
+  s.dependency     "AFNetworking",  "~> 3.1"
 
   s.vendored_frameworks = ["Framework/*.framework"]
   

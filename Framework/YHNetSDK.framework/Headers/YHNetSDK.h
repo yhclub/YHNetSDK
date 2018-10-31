@@ -3,7 +3,7 @@
 //  YHNetSDK
 //
 //  Created by zxl on 2018/1/30.
-//  V1.0.5  by jagtu  upload file
+//  V1.0.6  by jagtu
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
