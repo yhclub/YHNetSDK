@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author       = { "zhengxiaolang" => "haifeng3099@126.com" }
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => "1.0.4" }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => "1.0.6" }
 
   #s.source_files  = "Classes", "Classes/*"
 
