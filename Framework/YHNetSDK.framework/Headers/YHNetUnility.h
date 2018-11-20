@@ -17,9 +17,6 @@ typedef void(^YHFailed)(NSError *error);
 
 typedef void(^YHUploadProgress)(float uploadProgress);
 
-//手势锁定时间间隔
-#define NSTimeIntervalSinceEnterBackground  -60.0
-
 @interface YHNetUnility : NSObject
 
 
@@ -41,7 +38,7 @@ typedef void(^YHUploadProgress)(float uploadProgress);
  @param successed successed
  @param failed failed
  */
-+(void)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
++(NSArray *)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
 
 
 /**
@@ -52,7 +49,7 @@ typedef void(^YHUploadProgress)(float uploadProgress);
  @param successed successed
  @param failed failed
  */
-+(void)postHTTPRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
++(NSArray *)postHTTPRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
 
 
 /**
@@ -65,7 +62,7 @@ typedef void(^YHUploadProgress)(float uploadProgress);
  @param successed 成功回调
  @param failed 失败回调
  */
-+(void)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withFiles:(NSArray *)files uploadProgress:(YHUploadProgress)progress withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
++(NSArray *)postRequestWithUrl:(NSString *)url withParameters:(NSDictionary *)parameters withFiles:(NSArray *)files uploadProgress:(YHUploadProgress)progress withSuccessed:(YHSuccessed)successed withFailed:(YHFailed)failed;
 
 /**
  设置UA
@@ -73,5 +70,20 @@ typedef void(^YHUploadProgress)(float uploadProgress);
  @param userAgentValue str
  */
 +(void)setUserAgent:(NSString *)userAgentValue;
+
+
+/**
+ 取消指定网络请求
+
+ @param url 网址
+ @param parameters 参数
+ */
++(void)cancelRequestWithUrl:(NSString *)url withParam:(NSDictionary *)parameters;
+
+
+/**
+ 取消所有网络请求
+ */
++(void)cancelAllRequest;
 
 @end

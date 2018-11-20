@@ -4,6 +4,7 @@
 //
 //  Created by zxl on 2018/1/30.
 //  V1.0.6  by jagtu  upload file
+//  V1.0.7  by zxl  支持取消操作
 //  Copyright © 2018年 YH. All rights reserved.
 //
 

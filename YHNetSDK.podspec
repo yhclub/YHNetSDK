@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHNetSDK"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "YHNetSDK is only a net sdk"
 
   s.description  = "YHNetSDK is only a base net sdk, we need pod thirdparty: AFNetworking"

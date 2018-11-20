@@ -10,11 +10,11 @@
 
 @interface YHUploadFileModel : NSObject
 
-@property(nonatomic,strong)NSString *name;
+@property(nonatomic,copy)NSString *name;
 
-@property(nonatomic,strong)NSString *fileName;
+@property(nonatomic,copy)NSString *fileName;
 
-@property(nonatomic,strong)NSString *mimeType;
+@property(nonatomic,copy)NSString *mimeType;
 
 @property(nonatomic,strong)NSData *fileData;
 

@@ -36,12 +36,23 @@
  */
 @property(nonatomic,assign)NSInteger tag;
 
-
 /**
  delegate
  */
 @property(nonatomic,weak)id<YHNetProtocol> netHandle;
 
+/**
+ 当主动取消网络请求时候，会回调到 fail,error.code = -999;
+ 该属性用于控制是否允许执行 AFN FailedBlock,详见baseDP.m文件,
+ 默认为 NO;
+ */
+@property(nonatomic,assign)BOOL enableFailedActionWhenCancelRequest;
+
+
+/**
+ 网络请求列表
+ */
+@property(nonatomic,copy)NSArray *tasks;
 
 /**
  初始化函数
@@ -155,6 +166,11 @@
  */
 -(void)start;
 
+/**
+ 取消当前DP请求，并重新请求
+ */
+-(void)restart;
+
 
 /**
  设置DP请求接口前后的状态
@@ -164,5 +180,27 @@
 -(void)setDPStatusWhenSuccessed;
 
 -(void)setDPStatusWhenFailed;
+
+/**
+ 取消指定当前网络请求
+ 由于我们项目目前接口只有一个请求网址，因此不好区分不同DP，
+ 暂时将取消当前DP与取消所有DP写成同一个方法
+ */
+-(void)cancelDP;
+
+
+/**
+ 取消所有网络请求
+ */
+-(void)cancelAllDP;
+
+/**
+ 是否为主动取消状态
+
+ @param error -999
+ @return bool value
+ */
+-(BOOL)isCancelled:(NSError *)error;
+
 
 @end
