@@ -14,15 +14,15 @@ Pod::Spec.new do |s|
   s.author       = { "zhengxiaolang" => "haifeng3099@126.com" }
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => "1.0.6" }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => "1.0.8" }
 
   #s.source_files  = "Classes", "Classes/*"
 
   s.requires_arc = true
 
-  #s.dependency     "Reachability", "~> 3.2"
+  #s.dependency     "Reachability"
 
-  s.dependency     "AFNetworking",  "~> 3.1"
+  s.dependency     "AFNetworking"
 
   s.vendored_frameworks = ["Framework/*.framework"]
   
