@@ -54,6 +54,23 @@
  */
 @property(nonatomic,copy)NSArray *tasks;
 
+
+/**
+ 是否使用证书,转为为NO，即不使用证书
+ */
+@property(nonatomic,assign)BOOL isWithCer;
+
+
+/**
+ 自定义HTTPS证书路径
+ */
+@property(nonatomic,copy)NSString *cerFilePath;
+
+
+/**
+ 是否触发显示loadingview,默认为NO，即显示
+ */
+@property(nonatomic,assign)BOOL *hideLoadingview;
 /**
  初始化函数
 
