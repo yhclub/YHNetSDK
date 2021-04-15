@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YHNetSDK"
 
-  s.version      = "1.0.9"
+  s.version      = "1.0.10"
 
   s.summary      = "YHNetSDK is only a net sdk"
 
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => s.version.to_s }
+
 
   #s.source_files  = "Classes", "Classes/*"
 
