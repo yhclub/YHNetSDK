@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YHNetSDK"
 
-  s.version      = "1.0.11"
+  s.version      = "1.1.0"
 
   s.summary      = "YHNetSDK is only a net sdk"
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_1200' => 'arm64 arm64e armv7 armv7s armv6 armv8'
   }
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/XmYlzYhkj/YHNetSDK.git", :tag => s.version.to_s }
 
